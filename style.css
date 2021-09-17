@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5% ;
+    overflow-x: hidden;
+    background-color:#075050 ;
+
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    
+    background-color: #032323;
+    height: 80px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9rem;
+    
+}
+.burger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    /* -webkit-transition: all 0.3s ease-in-out; */
+    background-color:#101010 ;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-item{
+    margin-left: 5rem;
+}
+.nav-link{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    padding: 5px;
+}
+.nav-link:hover{
+    color: white;
+    border-radius: 20px;
+    background-color: turquoise;
+    box-shadow: 0 0 10px#20B2AA,0 0 40px #20B2AA,0 0 80px #20B2AA;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 600;
+    color:white ;
+    
+
+}
+.logo span{
+    color: turquoise;
+}
+.home{
+    
+    background-color: #075050;
+    height: 100%;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.ania img{
+    height: 500px;
+    
+    /* margin-right: 90px; */
+    overflow: hidden;
+}
+.text1{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.text2{
+    font-size: 50px;
+    font-weight: 600;
+}
+.text3{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #021a18;
+}
+
+.cv{
+    text-decoration: none;
+   
+    
+    padding: 20px;
+    
+    background-color: black;
+    border-radius: 20px; 
+    text-align: center;
+    width: 160px;
+    margin-left: 20vw;
+    
+    
+}
+.cv a{
+    color: blanchedalmond;
+    font-size: 16px;
+    
+}
+.cv a:hover{
+    
+        font-weight: 900;
+        text-shadow: 0 0 50px;
+    
+}
+.intro{
+    margin-top: 210px;
+    margin-left: 70px;
+}

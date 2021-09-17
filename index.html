@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Portfo<span>lio.</span> </a>
+            <ul class="menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="container">
+            <div class="intro">
+                <div class="text1">Hello, My name is,</div>
+                <div class="text2">Ania Chowdhury</div>
+                <div class="text3">And I am a Web Designer...</div>
+            </div>
+            <div class="ania">
+                <img src="ania.png" alt="">
+
+
+            </div>
+        </div>
+        <div class="cv"><a href="ania.txt" download="ania.txt">Download CV</a></div>
+    </section>
+</body>
+<script>
+    let menuBar = document.querySelector(".burger");
+    let navMenu = document.querySelector(".menu");
+
+
+    menuBar.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        menuBar.classList.toggle("active");
+        navMenu.classList.toggle("active");
+
+    };
+    let navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        menuBar.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+</script>
+
+</html>
